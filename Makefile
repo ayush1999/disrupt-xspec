@@ -1,6 +1,6 @@
 include $(PWD)/Makefile.in
 
-INC = $(XSINC)
+INC = -I$(XSDIR)/include
 XSLIB = -L$(XSDIR)/lib -lXSFunctions -lXSModel -lXSUtil -lXS
 LIB = $(XSLIB) -lm
 
