@@ -1,0 +1,3 @@
+CC = gcc
+XSDIR = #PATH TO XSPEC directory that has include/ and lib/
+LDFLAGS = -L/usr/local/lib -lcfitsio -lCCfits

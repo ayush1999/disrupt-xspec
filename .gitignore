@@ -1,0 +1,3 @@
+*.o
+test-interface
+Makefile.in
