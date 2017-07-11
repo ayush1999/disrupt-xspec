@@ -1,3 +1,10 @@
 *.o
+*.so
 test-interface
 Makefile.in
+*.swp
+*.png
+*.txt
+*.pyc
+xsmodels/build
+xsmodels/__pycache__

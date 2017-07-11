@@ -12,4 +12,14 @@ Your `LD_LIBRARY_PATH' or `DYLD_LIBRARY_PATH' may have to include the Xspec's `l
 
 ### Running ###
 
-The `HEADAS' environment variable must be set.  `HEADAS' points to the directory of the Xspec installation (the directory that ends with the platform name of your machine).
+The `HEADAS` environment variable must be set.  `HEADAS` points to the directory of the Xspec installation (the directory that ends with the platform name of your machine).
+
+## Building and Running `xsmodels` Python Package ##
+
+Navigate to the `xsmodels` directory and do an in-place build:
+
+```bash
+$ python setup.py build_ext -i
+```
+
+Now you can run the `test.py` script in the top-level directory.  It will print out the energy, params, flux, and fluxError arrays and produce a plot saved in `flux_py.png`.
