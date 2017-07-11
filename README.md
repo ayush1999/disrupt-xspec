@@ -16,7 +16,7 @@ The `HEADAS` environment variable must be set.  `HEADAS` points to the directory
 
 ## Building and Running `xsmodels` Python Package ##
 
-The `HEADAS` environment variable must be set.  Navigate to the `xsmodels` directory and do an in-place build:
+The `HEADAS` environment variable must be set and possibly `(DY)LD_LIBRARY_PATH`.  Navigate to the `xsmodels` directory and do an in-place build:
 
 ```bash
 $ python setup.py build_ext -i
