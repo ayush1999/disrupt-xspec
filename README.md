@@ -8,7 +8,7 @@ First copy `Makefile.in.template` to `Makefile.in`
 $ cp Makefile.in.template Makefile.in
 ```
 
-Your `LD_LIBRARY_PATH' or `DYLD_LIBRARY_PATH' may have to include the Xspec's `lib/' directory.
+Your `LD_LIBRARY_PATH` or `DYLD_LIBRARY_PATH` may have to include the Xspec's `lib/` directory.
 
 ### Running ###
 
@@ -16,7 +16,7 @@ The `HEADAS` environment variable must be set.  `HEADAS` points to the directory
 
 ## Building and Running `xsmodels` Python Package ##
 
-Navigate to the `xsmodels` directory and do an in-place build:
+The `HEADAS` environment variable must be set.  Navigate to the `xsmodels` directory and do an in-place build:
 
 ```bash
 $ python setup.py build_ext -i
