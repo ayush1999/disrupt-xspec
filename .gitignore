@@ -8,3 +8,7 @@ Makefile.in
 *.pyc
 xsmodels/build
 xsmodels/__pycache__
+build/
+dist/
+xsmodels.egg-info/
+notebooks/.ipynb_checkpoints

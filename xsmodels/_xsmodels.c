@@ -331,6 +331,8 @@ int xspec_model(const char model[], double *energy, int nFlux, double *params,
         C_snapec(energy, nFlux, params, specNum, flux, fluxErr, initStr);
     else if(!strcmp(model, "tapec"))
         C_tapec(energy, nFlux, params, specNum, flux, fluxErr, initStr);
+    else if(!strcmp(model, "tbabs"))
+        C_tbabs(energy, nFlux, params, specNum, flux, fluxErr, initStr);
     else
         err = 1;
 
