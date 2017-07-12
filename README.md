@@ -22,4 +22,19 @@ The `HEADAS` environment variable must be set and possibly `(DY)LD_LIBRARY_PATH`
 $ python setup.py build_ext -i
 ```
 
-Now you can run the `test.py` script in the top-level directory.  It will print out the energy, params, flux, and fluxError arrays and produce a plot saved in `flux_py.png`.
+In order to build the python package, you can now do:
+
+```bash
+$ python setup.py install
+```
+
+Note: if your python packages are located somewhere that requires sudo access, you might want to use `sudo -E` in order to preserve the environment variables set above.
+
+You should run the tests to make sure the package built and installed correctly. Note: you need to have the `pytest` package installed. In the top level directory, type
+
+```bash
+$ py.test
+```
+
+This will collect and run all tests. Ideally, no tests should throw errors. If any do, something went wrong with the installation.
+
