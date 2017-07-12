@@ -1,7 +1,7 @@
 include $(PWD)/Makefile.in
 
-INC = -I$(XSDIR)/include
-XSLIB = -L$(XSDIR)/lib -lXSFunctions -lXSModel -lXSUtil -lXS
+INC = -I$(HEADAS)/include
+XSLIB = -L$(HEADAS)/lib -lXSFunctions -lXSModel -lXSUtil -lXS
 LIB = $(XSLIB) -lm
 
 .PHONY: clean
