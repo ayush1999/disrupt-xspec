@@ -1,1 +1,3 @@
-from ._xsmodels import *
+#!/usr/bin/env python
+"""XSModels"""
+from _xsmodels import *

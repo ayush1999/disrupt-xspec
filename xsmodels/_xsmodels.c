@@ -214,8 +214,10 @@ static PyObject *xsmodels_model(PyObject *self, PyObject *args)
 
     int err = xspec_model(modelStr, energy, nFlux, params, spectrumNumber, flux,
                     fluxError, initStr);
-    if(err)
-        printf("Model not found: %s\n", modelStr);
+    if(err) {
+         PyErr_SetString(PyExc_ValueError, "Model not found!");
+         return (PyObject *) NULL;
+         }
 
     Py_DECREF(energy_arr);
     Py_DECREF(params_arr);
